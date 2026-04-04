@@ -1,8 +1,3 @@
-<!--
-  <<< Author notes: Finish >>>
-  Review what we learned, ask for feedback, provide next steps.
--->
-
 ## Finish
 
 _Congratulations, you've completed this course and joined the world of developers!_
@@ -32,3 +27,7 @@ Check out these resources to learn more or get involved:
 - [Take another GitHub Skills course](https://github.com/skills).
 - [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
 - To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
+
+### Share feedback
+
+Tell us what helped most and what could be clearer in the [course discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github).
