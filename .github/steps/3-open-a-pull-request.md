@@ -1,11 +1,3 @@
-<!--
-  <<< Author notes: Step 3 >>>
-  Just a historic note: the previous version of this step forced the learner
-  to write a pull request description,
-  checked that `main` was the receiving branch,
-  and that the file was named correctly.
--->
-
 ## Step 3: Open a pull request
 
 _Nice work making that commit! :sparkles:_
