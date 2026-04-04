@@ -1,9 +1,11 @@
 name: Step 3, Open a pull request
 
-# This step listens for the learner to open a pull request with branch `my-first-branch`.
-# This workflow updates from step 3 to step 4.
+# This step listens for the learner to open or update a pull request from branch
+# `my-first-branch`.
+# This workflow updates from step 3 to step 4 after the learner targets `main`,
+# adds a pull request description, and includes `PROFILE.md`.
 
-# This will run every time we create a branch or tag.
+# This runs whenever the learner opens, reopens, edits, or synchronizes a pull request.
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
