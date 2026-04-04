@@ -1,0 +1,32 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Introduction to GitHub course header</title>
+  <desc id="desc">A banner with the Introduction to GitHub title and a branching diagram.</desc>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="64" x2="1200" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="card" x1="820" y1="124" x2="1120" y2="444" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1F2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+  <circle cx="1090" cy="120" r="140" fill="#60A5FA" fill-opacity="0.14"/>
+  <circle cx="186" cy="560" r="120" fill="#93C5FD" fill-opacity="0.14"/>
+  <rect x="80" y="88" width="520" height="64" rx="32" fill="#DBEAFE" fill-opacity="0.14"/>
+  <text x="112" y="130" fill="#BFDBFE" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">GitHub Skills course</text>
+  <text x="80" y="252" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700">Introduction to GitHub</text>
+  <text x="80" y="316" fill="#DBEAFE" font-family="Arial, Helvetica, sans-serif" font-size="32">Learn branches, commits, pull requests, and merges.</text>
+  <text x="80" y="396" fill="#E5E7EB" font-family="Arial, Helvetica, sans-serif" font-size="28">Practice the full contribution flow in a guided repository.</text>
+  <g opacity="0.95">
+    <rect x="760" y="124" width="400" height="352" rx="28" fill="url(#card)" stroke="#93C5FD" stroke-opacity="0.45" stroke-width="2"/>
+    <path d="M872 198V380C872 410 896 434 926 434H1040" stroke="#BFDBFE" stroke-width="12" stroke-linecap="round"/>
+    <path d="M926 240H1040C1070 240 1094 264 1094 294V330" stroke="#60A5FA" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="872" cy="198" r="20" fill="#F8FAFC"/>
+    <circle cx="926" cy="240" r="20" fill="#93C5FD"/>
+    <circle cx="1094" cy="330" r="20" fill="#F8FAFC"/>
+    <circle cx="1040" cy="434" r="20" fill="#BFDBFE"/>
+    <rect x="820" y="512" width="280" height="20" rx="10" fill="#DBEAFE" fill-opacity="0.18"/>
+  </g>
+</svg>

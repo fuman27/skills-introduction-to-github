@@ -7,6 +7,8 @@
   Add your open source license, GitHub uses MIT license.
 -->
 
+<img src="/images/introduction-to-github-header.svg" alt="Introduction to GitHub course header" width="1280" height="640">
+
 # Introduction to GitHub
 
 _Get started using GitHub in less than an hour._
