@@ -1,11 +1,3 @@
-<!--
-  <<< Author notes: Step 3 >>>
-  Just a historic note: the previous version of this step forced the learner
-  to write a pull request description,
-  checked that `main` was the receiving branch,
-  and that the file was named correctly.
--->
-
 ## Step 3: Open a pull request
 
 _Nice work making that commit! :sparkles:_
@@ -20,7 +12,7 @@ You may have noticed after your commit that a message displayed indicating your 
 
 ![screenshot of message and button](/images/compare-and-pull-request.png)
 
-To create a pull request automatically, click **Compare & pull request**, and then skip to step 6 below. If you don't click the button, the instructions below walk you through manually setting up the pull request.
+To create a pull request automatically, click **Compare & pull request**, confirm that the base branch is `main`, and then skip to step 6 below. If you don't click the button, the instructions below walk you through manually setting up the pull request.
 
 1. Click on the **Pull requests** tab in the header menu of your repository.
 2. Click **New pull request**.
@@ -31,7 +23,7 @@ To create a pull request automatically, click **Compare & pull request**, and th
 
 5. Click **Create pull request**.
 6. Enter a title for your pull request. By default, the title will automatically be the name of your branch. For this exercise, let's edit the field to say `Add my first file`.
-7. The next field helps you provide a description of the changes you made. Here, you can add a description of what you’ve accomplished so far. As a reminder, you have: created a new branch, created a file, and made a commit.
+7. The next field helps you provide a description of the changes you made. Add a short description of what you’ve accomplished so far. As a reminder, you have: created a new branch, created `PROFILE.md`, and made a commit.
 
    ![screenshot showing pull request](/images/Pull-request-description.png)
 
