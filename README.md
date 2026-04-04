@@ -1,11 +1,5 @@
 <header>
-
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+<img src="https://repository-images.githubusercontent.com/848983214/bcf3f8b4-362b-48fd-8142-6dd4f60db8cd" width="1280" height="640" alt="Introduction to GitHub course image" />
 
 # Introduction to GitHub
 
