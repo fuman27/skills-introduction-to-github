@@ -35,3 +35,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Local / experimental directory (not part of the course materials)
+resume-tailor/
