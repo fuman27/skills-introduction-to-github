@@ -2,6 +2,7 @@
 
 import { TailoredResume, JobAnalysis } from "@/lib/types";
 import { useRef, useCallback } from "react";
+import { toast } from "react-hot-toast";
 
 interface ResumePreviewProps {
   tailoredResume: TailoredResume;
@@ -15,7 +16,7 @@ export default function ResumePreview({ tailoredResume, analysis }: ResumePrevie
     window.print();
   }, []);
 
-  const handleCopyText = useCallback(() => {
+  const handleCopyText = useCallback(async () => {
     const lines: string[] = [];
     const r = tailoredResume;
 
@@ -60,7 +61,13 @@ export default function ResumePreview({ tailoredResume, analysis }: ResumePrevie
       }
     }
 
-    navigator.clipboard.writeText(lines.join("\n"));
+    const text = lines.join("\n");
+    try {
+      await navigator.clipboard.writeText(text);
+      toast.success("Resume copied to clipboard");
+    } catch {
+      toast.error("Could not copy automatically — try Print / Save PDF or copy manually");
+    }
   }, [tailoredResume]);
 
   return (
