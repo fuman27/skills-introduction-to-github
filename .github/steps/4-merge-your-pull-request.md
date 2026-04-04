@@ -1,10 +1,3 @@
-<!--
-  <<< Author notes: Step 4 >>>
-  Just a historic note: The previous version of this step required responding
-  to a pull request review before merging. The previous version also handled
-  if users accidentally closed without merging.
--->
-
 ## Step 4: Merge your pull request
 
 _Nicely done! :sunglasses:_
