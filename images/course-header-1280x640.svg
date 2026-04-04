@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Introduction to GitHub course header</title>
+  <desc id="desc">A 1280 by 640 banner for the Introduction to GitHub course.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <circle cx="1090" cy="140" r="120" fill="#ffffff" fill-opacity="0.08"/>
+  <circle cx="180" cy="520" r="180" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="120" y="270" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700">
+    Introduction to GitHub
+  </text>
+  <text x="120" y="340" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="34">
+    Get started using GitHub in less than an hour.
+  </text>
+</svg>
