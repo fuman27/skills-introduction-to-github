@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { JobAnalysis } from "@/lib/types";
 import { getSampleJobDescription } from "@/lib/store";
-import IndeedSearch from "@/components/IndeedSearch";
+import JobSearch from "@/components/JobSearch";
 
-type JobTab = "paste" | "indeed";
+type JobTab = "paste" | "search";
 
 interface JobInputProps {
   jobDescription: string;
@@ -24,7 +24,7 @@ export default function JobInput({
     onJobDescriptionChange(getSampleJobDescription());
   };
 
-  const handleImportFromIndeed = (description: string) => {
+  const handleImportFromSearch = (description: string) => {
     onJobDescriptionChange(description);
     setActiveTab("paste");
   };
@@ -35,7 +35,7 @@ export default function JobInput({
         <div>
           <h2 className="text-2xl font-bold text-gray-900">Job Description</h2>
           <p className="text-gray-500 mt-1">
-            Search Indeed or paste a job description to analyze against your resume.
+            Search real job boards or paste a description to analyze against your resume.
           </p>
         </div>
         {activeTab === "paste" && (
@@ -64,9 +64,9 @@ export default function JobInput({
           Paste Description
         </button>
         <button
-          onClick={() => setActiveTab("indeed")}
+          onClick={() => setActiveTab("search")}
           className={`flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${
-            activeTab === "indeed"
+            activeTab === "search"
               ? "bg-white text-gray-900 shadow-sm"
               : "text-gray-500 hover:text-gray-700"
           }`}
@@ -74,7 +74,7 @@ export default function JobInput({
           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
-          Search Indeed
+          Search Job Boards
         </button>
       </div>
 
@@ -95,9 +95,9 @@ export default function JobInput({
         </>
       )}
 
-      {activeTab === "indeed" && (
+      {activeTab === "search" && (
         <>
-          <IndeedSearch onImportJob={handleImportFromIndeed} />
+          <JobSearch onImportJob={handleImportFromSearch} />
 
           {jobDescription && analysis && (
             <div className="bg-indigo-50 rounded-xl border border-indigo-200 p-4">

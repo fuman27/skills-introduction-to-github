@@ -54,7 +54,9 @@ export interface TailoredResume {
   highlights: string[];
 }
 
-export interface IndeedJob {
+export type JobProvider = "adzuna" | "usajobs" | "jsearch";
+
+export interface JobListing {
   id: string;
   title: string;
   company: string;
@@ -63,13 +65,33 @@ export interface IndeedJob {
   salary: string;
   datePosted: string;
   url: string;
+  provider: JobProvider;
 }
 
-export interface IndeedSearchResult {
-  jobs: IndeedJob[];
+export interface JobSearchResult {
+  jobs: JobListing[];
   totalResults: string;
   query: string;
   location: string;
+  provider: JobProvider;
+}
+
+export interface JobDetail {
+  title: string;
+  company: string;
+  location: string;
+  salary: string;
+  description: string;
+  url: string;
+  provider: JobProvider;
+}
+
+export interface ProviderConfig {
+  id: JobProvider;
+  name: string;
+  description: string;
+  configured: boolean;
+  envVars: string[];
 }
 
 export type AppStep = "resume" | "job" | "preview";
