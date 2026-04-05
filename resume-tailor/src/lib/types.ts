@@ -54,4 +54,22 @@ export interface TailoredResume {
   highlights: string[];
 }
 
+export interface IndeedJob {
+  id: string;
+  title: string;
+  company: string;
+  location: string;
+  snippet: string;
+  salary: string;
+  datePosted: string;
+  url: string;
+}
+
+export interface IndeedSearchResult {
+  jobs: IndeedJob[];
+  totalResults: string;
+  query: string;
+  location: string;
+}
+
 export type AppStep = "resume" | "job" | "preview";
