@@ -18,12 +18,19 @@ The main application. A Next.js 16 + TypeScript + Tailwind CSS app.
 - **Build**: `npm run build`
 - **Install deps**: `npm install`
 
-**Architecture**: Single-page client-side app with 3-step flow:
+**Architecture**: Next.js app with client-side UI and server-side API routes:
 1. Enter resume details (contact, summary, experience, education, skills)
-2. Paste job description → instant analysis (match score, skill gaps)
+2. Paste job description OR search job boards → instant analysis (match score, skill gaps)
 3. View tailored resume (reordered skills/experience, customized summary)
 
-Data persists in localStorage. No backend or database required.
+Data persists in localStorage. No external database required.
+
+**Job search providers** (configured via environment variables, see `.env.example`):
+- **Adzuna** (`ADZUNA_APP_ID`, `ADZUNA_APP_KEY`): Global job search, free 250 req/month
+- **USAJobs** (`USAJOBS_API_KEY`, `USAJOBS_EMAIL`): US government jobs, free unlimited
+- **JSearch** (`RAPIDAPI_KEY`): Aggregated search via RapidAPI, free 200 req/month
+
+The app works without API keys (paste-only mode). When keys are set, the "Search Job Boards" tab becomes active with provider selection.
 
 ### GitHub Actions Workflows (root)
 
