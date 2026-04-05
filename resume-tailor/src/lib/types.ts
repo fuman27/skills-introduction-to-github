@@ -45,13 +45,29 @@ export interface JobAnalysis {
   matchScore: number;
 }
 
+export interface TailoredExperience extends Experience {
+  originalBullets: string[];
+}
+
+export interface AtsTip {
+  category: "keyword" | "format" | "impact" | "strategy";
+  message: string;
+  priority: "high" | "medium" | "low";
+}
+
 export interface TailoredResume {
   contact: ContactInfo;
   summary: string;
-  experience: Experience[];
+  originalSummary: string;
+  experience: TailoredExperience[];
   education: Education[];
   skills: string[];
   highlights: string[];
+  atsScore: number;
+  atsTips: AtsTip[];
+  aiPowered: boolean;
+  keywordMatches: string[];
+  improvementsMade: string[];
 }
 
 export type JobProvider = "adzuna" | "usajobs" | "jsearch";

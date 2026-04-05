@@ -25,6 +25,11 @@ The main application. A Next.js 16 + TypeScript + Tailwind CSS app.
 
 Data persists in localStorage. No external database required.
 
+**AI resume tailoring** (optional, configured via env vars):
+- Set `OPENAI_API_KEY` to enable LLM-powered resume rewriting. Any OpenAI-compatible API works.
+- Optional: `OPENAI_BASE_URL` (default: OpenAI), `OPENAI_MODEL` (default: `gpt-4o-mini`)
+- Without an API key, the app uses a rule-based engine with action verb strengthening, keyword injection, and ATS scoring.
+
 **Job search providers** (configured via environment variables, see `.env.example`):
 - **Adzuna** (`ADZUNA_APP_ID`, `ADZUNA_APP_KEY`): Global job search, free 250 req/month
 - **USAJobs** (`USAJOBS_API_KEY`, `USAJOBS_EMAIL`): US government jobs, free unlimited
